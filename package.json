@@ -21,7 +21,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "npm run deploy"
+      "pre-push": "if [ $(git symbolic-ref --short HEAD) = 'main' ]; then npm run deploy; fi"
     }
   }
 }
