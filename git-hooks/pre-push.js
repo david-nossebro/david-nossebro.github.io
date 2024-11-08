@@ -1,3 +1,5 @@
+
+/*
 import { execSync } from 'child_process';
 
 const branch = execSync('git rev-parse --abbrev-ref HEAD')
@@ -6,3 +8,4 @@ const branch = execSync('git rev-parse --abbrev-ref HEAD')
 if (branch === 'main') {
     execSync('npm run deploy', { stdio: 'inherit' })
 }
+*/
