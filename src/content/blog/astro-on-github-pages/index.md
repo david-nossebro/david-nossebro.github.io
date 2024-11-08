@@ -4,10 +4,9 @@ description: How to setup Astro blog on Github pages
 pubDate: Nov 09 2024
 ---
 After trying to deploy this blog using Surge as described in this [post](../deploy-static-site-to-surge/index.md) I realized some issues as mentioned in this [post](../why-surge-was-not-a-good-fit/index.md) I decided to try [Github page](https://pages.github.com/).
-
 ## Setup a new repository
 
-The first thing I need to do is to create a new repository with the same name as my Github user. In my case a repository called `david-nossebro/david-nossebro`. The content of this repository will be published to [https://david-nossebro.github.io](https://david-nossebro.github.io).
+The first thing I need to do is to create a new repository with the same name as my Github user suffixed with `.github.io`. In my case a repository called `david-nossebro/david-nossebro.github.io`. The content of this repository will be published to [https://david-nossebro.github.io](https://david-nossebro.github.io).
 
 When that was done I pushed the source and content of this Astro blog to the new repository. But since this is not a compiled version with an index.html at the root, some more configuration is needed. 
 
@@ -24,7 +23,7 @@ export default defineConfig({
 });
 ```
 
-I pushed my changes and then headed over to the settings for my new repo `david-nossebro/david-nossebro` at Github. There I opened the "Pages" section:
+I pushed my changes and then headed over to the settings for my new repo `david-nossebro/david-nossebro.github.io` at Github. There I opened the "Pages" section:
 
 ![](images/github-pages-pages.png)
 
@@ -46,7 +45,10 @@ Opening the latest workflow run "Create astro.yml", I could see the outcome of t
 
 ![](images/github-action-build-result.png)
 
-Opening the link I can now see my deployed site. But there is one issue to resolve. The URL it was hosted to is [https://david-nossebro.github.io/david-nossebro/](https://david-nossebro.github.io/david-nossebro/) instead of just [https://david-nossebro.github.io](https://david-nossebro.github.io). And when I click any of the links in the first page, none of them work.
+Opening the link I can now see my deployed site. Great success!
 
-	
+## What is next?
 
+Next thing to fix will be to use my custom domain [server-1.eu](https://server-1.eu). 
+
+Thank you for reading!
