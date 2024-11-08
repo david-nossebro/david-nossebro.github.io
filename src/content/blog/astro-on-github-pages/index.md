@@ -24,8 +24,27 @@ export default defineConfig({
 });
 ```
 
-Then I headed over to the settings for my new repo `david-nossebro/david-nossebro` at Github. There I opened the "Pages" section:
+I pushed my changes and then headed over to the settings for my new repo `david-nossebro/david-nossebro` at Github. There I opened the "Pages" section:
 
 ![](images/github-pages-pages.png)
 
-And in there I changed the `Source` from "Deploy from branch" to "Github Actions". 
+And in there I changed the `Source` from "Deploy from branch" to "Github Actions". When selected there is a link visible to "browse all workflows":
+
+![](images/browse-all-workflows-github-actions.png)
+
+In there I searched for Astro and found a workflow:
+
+![](images/astro-workflow-github-actions.png)
+
+When pressing configure I am presented with a long yaml-file with many different options. I decided to just try it out with the default settings without changing anything to see if it "just works" out of the box. In the top right corner I pressed "Commit changes".
+
+I then headed over to the "Actions" tab:
+
+![](images/github-actions-tab.png)
+
+Opening the latest workflow run "Create astro.yml", I could see the outcome of the build:
+
+![](images/github-action-build-result.png)
+
+Opening the link I can now see my deployed site. Great success! But there is one small issue that I still want to resolve. The URL it was hosted to is [https://david-nossebro.github.io/david-nossebro/](https://david-nossebro.github.io/david-nossebro/) instead of just [https://david-nossebro.github.io](https://david-nossebro.github.io). Has to be some setting that needs to be done. 
+
