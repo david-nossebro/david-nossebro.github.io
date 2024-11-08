@@ -46,5 +46,7 @@ Opening the latest workflow run "Create astro.yml", I could see the outcome of t
 
 ![](images/github-action-build-result.png)
 
-Opening the link I can now see my deployed site. Great success! But there is one small issue that I still want to resolve. The URL it was hosted to is [https://david-nossebro.github.io/david-nossebro/](https://david-nossebro.github.io/david-nossebro/) instead of just [https://david-nossebro.github.io](https://david-nossebro.github.io). Has to be some setting that needs to be done. 
+Opening the link I can now see my deployed site. But there is one issue to resolve. The URL it was hosted to is [https://david-nossebro.github.io/david-nossebro/](https://david-nossebro.github.io/david-nossebro/) instead of just [https://david-nossebro.github.io](https://david-nossebro.github.io). And when I click any of the links in the first page, none of them work.
+
+
 
