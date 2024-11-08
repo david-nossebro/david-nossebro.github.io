@@ -48,5 +48,5 @@ Opening the latest workflow run "Create astro.yml", I could see the outcome of t
 
 Opening the link I can now see my deployed site. But there is one issue to resolve. The URL it was hosted to is [https://david-nossebro.github.io/david-nossebro/](https://david-nossebro.github.io/david-nossebro/) instead of just [https://david-nossebro.github.io](https://david-nossebro.github.io). And when I click any of the links in the first page, none of them work.
 
-
+	
 
