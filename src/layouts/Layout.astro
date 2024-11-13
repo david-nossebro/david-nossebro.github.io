@@ -1,0 +1,18 @@
+
+---
+import "../styles/base.css"
+import BaseHead from "../components/BaseHead.astro";
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <BaseHead title={title} description={description} />
+</head>
+<body>
+<main class="flex justify-center px-8 py-14">
+    <slot />
+</main>
+</body>
+</html>

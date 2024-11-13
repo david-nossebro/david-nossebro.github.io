@@ -24,6 +24,7 @@ I setup configurations for `A`, `AAAA` and `CNAME`:
 | A     | @    | 185.199.108.153     |
 | AAAA  | @    | 2606:50c0:8000::153 |
 | CNAME | www  | server-1.eu         |
+
 - The `A` records with name `@` maps the root domain `server-1.eu` to the ip `185.199.108.153`, where the IP points to Github Pages servers.
 - The `AAAA` does the exact same thing but for IPv6.
 - The `CNAME` entry routes the subdomain `www.server-1.eu` to the root domain `server-1.eu`.

@@ -4,6 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+/*
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -47,6 +48,7 @@ main {
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
+	color: rgb(var(--gray-dark));
 }
 h1,
 h2,
@@ -59,19 +61,19 @@ h6 {
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
-}
-h2 {
 	font-size: 2.441em;
 }
-h3 {
+h2 {
 	font-size: 1.953em;
 }
-h4 {
+h3 {
 	font-size: 1.563em;
 }
-h5 {
+h4 {
 	font-size: 1.25em;
+}
+h5 {
+	font-size: 1em;
 }
 strong,
 b {
@@ -84,6 +86,7 @@ a:hover {
 	color: var(--accent);
 }
 p {
+	margin-top: 1em;
 	margin-bottom: 1em;
 }
 .prose p {
@@ -98,6 +101,25 @@ input {
 }
 table {
 	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	counter-reset: item;
+}
+ul, ol {
+	list-style-position: inside;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+ol li {
+	counter-increment: item;
+}
+ol li::before {
+	content: counter(item) ". ";
 }
 img {
 	max-width: 100%;
@@ -120,7 +142,7 @@ blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
 	margin: 0px;
-	font-size: 1.333em;
+	font-size: 1em;
 }
 hr {
 	border: none;
@@ -143,12 +165,9 @@ hr {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
 	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
 	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
 	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+*/
