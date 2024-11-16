@@ -21,7 +21,7 @@ mklink /D "C:\path\to\astro\project\src\content\" "C:\path\to\obsidian\vault\ser
 
 After doing this I can see this in Obsidian:
 
-![](./images/obsidian-folder-structure.png)
+![](images/obsidian-folder-structure.png)
 
 On a **Linux** or **MacOS** system you can setup a symlink with this command:
 
@@ -33,7 +33,7 @@ ln -s /path/to/obsidian/vault/server-1.surge.sh/content /path/to/astro/project/s
 
 With this simple its really easy to write the content and directly when you save it in Obsidian, you get it in your Astro build. If you have the Astro site running with `npm run start` so that files are watched, I get updates to my site at the same time as I write. This makes it possible to have them side by side and in realtime get the result:
 
-![](./images/obsidian-edit-astro-view.png)
+![](images/obsidian-edit-astro-view.png)
 
 ## What is next?
 
