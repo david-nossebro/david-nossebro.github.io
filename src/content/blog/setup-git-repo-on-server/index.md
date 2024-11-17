@@ -4,9 +4,7 @@ description: How to setup and access a git repository on a server
 pubDate: Nov 17 2024
 ---
 
-I want to setup a remote git repository on my Raspberry Pi home server. I want to access it from my desktop computer to be able to push code to it. I also want to be able to initialize new repositories directly from my desktop by simply pushing it to the server. If it does not exist upon push, I want it to be created.
-
-In the next step I will be using git to trigger deploys on my home server, but that will be covered in another article. 
+I want to setup a remote git repository on my Raspberry Pi home server. I want to access it from my desktop computer to be able to push code to it. In the next step I will be using git to trigger deploys on my home server, but that will be covered in another article. 
 
 Let us se what we have to do!
 
@@ -120,7 +118,7 @@ Cloning into 'ThisIsProject'...
 warning: You appear to have cloned an empty repository.
 ```
 
-As another test I added a textfile and pushed it. It all seems to work so far, so time for some celebration! 🎉
+As another test I added a textfile and pushed it. It all seems to work, so time for celebration! 🎉
 
 - [x] Try it out and celebrate! 🥳 ✅
 
